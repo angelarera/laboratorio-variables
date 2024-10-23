@@ -13,7 +13,7 @@ const hardRock = "🤘 Hard Rock";
 const clasica = "🎼 Clásica";
 
 // Estilos de texto
-const estiloNombre = "font-weight: 900; font-size: 18px; color: green;"
+const estiloNombre = "font-weight: 900; font-size: 18px; background-color: green;"
 
 // Grupos musicales
 const grupoMusical1 :  GrupoMusical = {
@@ -51,8 +51,17 @@ const grupoMusical5 :  GrupoMusical = {
     genero: rock,
 }
 
-console.log(grupoMusical1);
-console.log(grupoMusical2);
-console.log(grupoMusical3);
-console.log(grupoMusical4);
-console.log(grupoMusical5);
+console.log(`%c${grupoMusical1.nombre}`, estiloNombre);
+console.log(`${grupoMusical1.añoFundacion}, ${grupoMusical1.activo}, ${grupoMusical1.genero}`);
+
+console.log(`%c${grupoMusical2.nombre}`, estiloNombre);
+console.log(`${grupoMusical2.añoFundacion}, ${grupoMusical2.activo}, ${grupoMusical2.genero}`);
+
+console.log(`%c${grupoMusical3.nombre}`, estiloNombre);
+console.log(`${grupoMusical3.añoFundacion}, ${grupoMusical3.activo}, ${grupoMusical3.genero}`);
+
+console.log(`%c${grupoMusical4.nombre}`, estiloNombre);
+console.log(`${grupoMusical4.añoFundacion}, ${grupoMusical4.activo}, ${grupoMusical4.genero}`);
+
+console.log(`%c${grupoMusical5.nombre}`, estiloNombre);
+console.log(`${grupoMusical5.añoFundacion}, ${grupoMusical5.activo}, ${grupoMusical5.genero}`);
